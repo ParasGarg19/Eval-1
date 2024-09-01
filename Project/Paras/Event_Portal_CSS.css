@@ -1,1 +1,103 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #000;
+    color: #fff;
+}
 
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+}
+
+.container {
+    padding: 16px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.w3-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.w3-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.w3-container img {
+    border-radius: 5px;
+}
+
+.w3-hover-opacity:hover {
+    opacity: 0.75;
+}
+
+.w3-container.w3-white {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.w3-bar .w3-bar-item {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.w3-bar .w3-bar-item:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.w3-bar .w3-black {
+    background-color: #333;
+    color: #fff;
+}
+
+footer.w3-dark-grey {
+    background-color: #333;
+    color: #fff;
+    padding: 32px;
+    text-align: left;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.w3-ul.w3-hoverable li {
+    background-color: #1a1a1a;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+.w3-ul.w3-hoverable li:hover {
+    background-color: #333;
+}
+
+.w3-ul.w3-hoverable img {
+    border-radius: 5px;
+}
+
+footer .w3-ul.w3-hoverable img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
