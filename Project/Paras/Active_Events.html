@@ -7,39 +7,54 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="Project_CSS.css">
+<link rel="stylesheet" href="Loading_Animation_CSS.css">
+<link rel="stylesheet" href="Active Events_CSS.css">
+<script src="Project_js.js" defer></script>
 
 </head>
 <body style="max-width:1600px">
+  <div id="preload">
+    <div class="Loader-container">
+    <div class="loading-text">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+    </div>
+  </div>
+</div>
 
-<div class="w3-main" style="margin-left:50px">
+<div class="w3-main" style="margin-left:50px" id="main">
 
     <div class="container" bgcolor="black">
     <h1><b>EVENT PORTAL</b></h1>
     <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right"><b>Filter:</b></span> 
-      <button class="w3-button w3-white">Active Events</button>&nbsp&nbsp&nbsp
-      <button class="w3-button w3-white">Upcoming Events</button>
+      <button class="w3-button w3-white" onclick="location.href='Active_Events.html'">Active Events</button>&nbsp&nbsp&nbsp
+      <button class="w3-button w3-white" onclick="location.href='Upcoming_Events.html'">Upcoming Events</button>
     </div>
   </header>
   
   <div class="w3-row-padding">
     <div class="w3-third container w3-margin-bottom">
-      <img src="D:\FEE\3rd Sem\Project\Images\Cricket.png" alt="Cricket" style="height: 200px; width:100%" class="w3-hover-opacity">
+      <img src="D:\FEE\3rd Sem\Project [ID - 07]\Images\Cricket.png" alt="Cricket" style="height: 250px; width:100%" class="w3-hover-opacity" onclick="imageClicked1()">
       <div class="container w3-white">
         <p><b>T-10 Cricket</b></p>
       </div>
     </div>
 
     <div class="w3-third container w3-margin-bottom">
-      <img src="D:\FEE\3rd Sem\Project\Images\Basketball.png" alt="Basketball" style="height: 200px; width:100%" class="w3-hover-opacity">
+      <img src="D:\FEE\3rd Sem\Project [ID - 07]\Images\Basketball.png" alt="Basketball" style="height: 250px; width:100%" class="w3-hover-opacity" onclick="imageClicked2()">
       <div class="container w3-white">
         <p><b>3v3 Basketball</b></p>
       </div>
     </div>
 
     <div class="w3-third container">
-      <img src="D:\FEE\3rd Sem\Project\Images\Foosball.png" alt="Foosball" style="height: 200px; width:100%" class="w3-hover-opacity">
+      <img src="D:\FEE\3rd Sem\Project [ID - 07]\Images\Foosball.png" alt="Foosball" style="height: 250px; width:100%" class="w3-hover-opacity" onclick="imageClicked3()">
       <div class="container w3-white">
         <p><b>Foosball</b></p>
       </div>
@@ -48,21 +63,21 @@
   
   <div class="w3-row-padding">
     <div class="w3-third container w3-margin-bottom">
-      <img src="D:\FEE\3rd Sem\Project\Images\8 Ball Pool.png" alt="8 Ball Pool" style="height: 200px; width:100%" class="w3-hover-opacity">
+      <img src="D:\FEE\3rd Sem\Project [ID - 07]\Images\8 Ball Pool.png" alt="8 Ball Pool" style="height: 250px; width:100%" class="w3-hover-opacity" onclick="imageClicked4()">
       <div class="container w3-white">
         <p><b>8 Ball Pool</b></p>
       </div>
     </div>
 
     <div class="w3-third container w3-margin-bottom">
-      <img src="D:\FEE\3rd Sem\Project\Images\Chess.png" alt="Chess" style="height: 200px; width:100%" class="w3-hover-opacity">
+      <img src="D:\FEE\3rd Sem\Project [ID - 07]\Images\Chess.png" alt="Chess" style="height: 250px; width:100%" class="w3-hover-opacity" onclick="imageClicked5()">
       <div class="container w3-white">
         <p><b>Chess</b></p>
       </div>
     </div>
 
     <div class="w3-third container">
-      <img src="D:\FEE\3rd Sem\Project\Images\Football.png" alt="Football" style="height: 200px; width:100%" class="w3-hover-opacity">
+      <img src="D:\FEE\3rd Sem\Project [ID - 07]\Images\Football.png" alt="Football" style="height: 250px; width:100%" class="w3-hover-opacity" onclick="imageClicked6()">
       <div class="container w3-white">
         <p><b>Football</b></p>
       </div>
@@ -87,7 +102,7 @@
   <footer class="container w3-padding-32 w3-dark-grey">
   <div class="w3-row-padding">
     <div class="w3-third">
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>&copy; Eventex 2024. All rights reserved.</p>
     </div>
   
     
@@ -96,5 +111,19 @@
   </footer>
 
 </div>
+<script>
+  function preloader(){
+    const preload = document.getElementById('preload');
+    const main = document.getElementById('main');
+
+    setTimeout(function(){
+      preload.style.display = 'none';
+      main.style.display = 'block';
+    },2000);
+  }
+
+  window.addEventListener('load', preloader);
+</script>
+
 </body>
 </html>
