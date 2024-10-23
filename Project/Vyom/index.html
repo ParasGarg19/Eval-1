@@ -1,46 +1,66 @@
-<form action="all.together.html" method="get">
-    
-    <table border="grey" bgcolor="cyan" cellpadding="10" cellspacing="7" align="center">
-            <caption><font size="6 face="Aerial"> REGISTRATION FORM</font></caption>
-    <tr>
-         <th>First Name:</th><td><input type="text" name="f1" size="30" maxlength="30"></td>
-    </tr>
-    <tr>
-         <th>Last Name:</th><td><input type="text" name="f2" size="30" maxlength="30"></td>
-     </tr>
-     <tr>
-         <th>E Mail ID:</th><td><input type="text" name="f3" size="30" maxlength="30"></td>
-    </tr>
-    <tr>
-         <th>Password:</th><td><input type="password" name="f4" size="30" maxlength="20"></td>
-    </tr>
-    <tr>
-         <th>Address:</th><td><textarea rows="6" cols="20"></textarea></td>
-    </tr>
-    <tr>
-         <th> Gender:</th><td><input type="radio" name="a1"> male
-              <input type="radio"name="a1"> female
-    </tr>
-    <tr>
-          <th>Language:</th><td><input type="checkbox" name="a2"> english
-          <input type="checkbox" name="a2"> hindi
-          <input type="checkbox" name="a2"> punjabi 
-          </td> 
-    </tr>
-    <tr>
-           <th>Upload resume:</th><td><input type="file" name="r2"></td>
-    </tr> 
-    <tr>
-          <th>select Bank</th>
-    <td><select>
-                       <option>HDFC</option>
-                       <option>ICICI</option>
-                       <option>PSB</option>
-           </select></td>
-    </tr>
-    <tr>
-           <td align="center" colspan="2"><input type="submit" value="submit">
-           <input type="reset" value="reset"></td>
-    </tr>
-    </table>
-    </form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Login Page | AsmrProg</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registeration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Log In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button>Log In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
