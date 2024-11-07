@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,22 +6,64 @@
     <title>Join Clubs</title>
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
- 
     <link rel="stylesheet" href="page.css">
+    
+    <style>
+       
+        #cart-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 20px;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+        
+        #cart-container i {
+            margin-right: 5px;
+        }
+
+        #cart-count {
+            font-weight: bold;
+            color: red; 
+        }
+    </style>
+    
+    <script>
+       
+        let cartCount = 0;
+        
+        function addToCart() {
+            cartCount++; 
+            document.getElementById("cart-count").innerText = cartCount; 
+    
+            
+            setTimeout(() => {
+                window.location.href = "login_page.html";
+            }, 100); 
+        }
+    </script>
+
 </head>
 <body>
 
-    <div id="intro">
-    <header>
-        <div class="overlay">
-    <h1>Join Club</h1>
-    <h3>Explore Your Potential</h3>
-    <p>Joining a college club enhances personal and professional growth by building social connections, developing skills, offering leadership opportunities, and providing stress relief. It also fosters creativity, teamwork, and career exploration.</p>
-        
-        
-            </div>
-    </header>
+    
 
+    <div id="intro">
+        <header>
+            <div class="overlay">
+                <h1>Join Club</h1>
+                <h3>Explore Your Potential</h3>
+                <p>Joining a college club enhances personal and professional growth by building social connections, developing skills, offering leadership opportunities, and providing stress relief. It also fosters creativity, teamwork, and career exploration.</p>
+                
+                
+                <div id="cart-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span> 
+                </div>
+            </div>
+        </header>
     </div>
 
     <div class="card-list">
@@ -30,84 +71,82 @@
             <img src="debate.png" alt="Debate">
             <span class="debate">Debating Society</span>
             <h3>Debate sharpens minds, fostering diverse perspectives.</h3>
-            <div class="arrow">
+            <div class="arrow" onclick="addToCart()">
                 <i class="fas fa-arrow-right card-icon"></i>
             </div>
         </a>
+
         <a href="#" class="card-item">
-            <img src="graphics.jpeg" alt="graphics">
-            <span class="graphics">graphics</span>
+            <img src="graphics.jpg" alt="Graphics">
+            <span class="graphics">Graphics</span>
             <h3>Graphics transform ideas into vibrant visual stories.</h3>
-            <div class="arrow">
+            <div class="arrow" onclick="addToCart()">
                 <i class="fas fa-arrow-right card-icon"></i>
             </div>
         </a>
 
         <a href="#" class="card-item">
-            <img src="acting.jpeg" alt="acting">
-            <span class="acting">acting</span>
-            <h3>Every emotion is a story untold</h3>
-            <div class="arrow">
+            <img src="acting.jpg" alt="Acting">
+            <span class="acting">Acting</span>
+            <h3>Every emotion is a story untold.</h3>
+            <div class="arrow" onclick="addToCart()">
                 <i class="fas fa-arrow-right card-icon"></i>
             </div>
         </a>
 
         <a href="#" class="card-item">
-            <img src="cricket.jpeg" alt="cricket">
-            <span class="cricket">cricket</span>
-            <h3>"Every match writes a new cricket saga</h3>
-            <div class="arrow">
+            <img src="cricket.jpg" alt="Cricket">
+            <span class="cricket">Cricket</span>
+            <h3>Every match writes a new cricket saga.</h3>
+            <div class="arrow" onclick="addToCart()">
                 <i class="fas fa-arrow-right card-icon"></i>
             </div>
         </a>
 
         <a href="#" class="card-item">
-            <img src="football.jpeg" alt="football">
-            <span class="football">football</span>
+            <img src="football.jpg" alt="Football">
+            <span class="football">Football</span>
             <h3>Every goal echoes dreams of victory.</h3>
-            <div class="arrow">
+            <div class="arrow" onclick="addToCart()">
                 <i class="fas fa-arrow-right card-icon"></i>
             </div>
         </a>
 
         <a href="#" class="card-item">
-            <img src="painting.webp" alt="painting">
+            <img src="painting.jpg" alt="Painting">
             <span class="painting">Art Club</span>
             <h3>Painting captures emotions with every brushstroke.</h3>
-            <div class="arrow">
+            <div class="arrow" onclick="addToCart()">
                 <i class="fas fa-arrow-right card-icon"></i>
             </div>
         </a>
 
         <a href="#" class="card-item">
-            <img src="organising.jpeg" alt="organising">
-            <span class="organising">organising Club</span>
+            <img src="organising.jpg" alt="Organising">
+            <span class="organising">Organising Club</span>
             <h3>Organization turns chaos into seamless efficiency.</h3>
-            <div class="arrow">
+            <div class="arrow" onclick="addToCart()">
                 <i class="fas fa-arrow-right card-icon"></i>
             </div>
         </a>
 
         <a href="#" class="card-item">
-            <img src="dance.jpeg" alt="dance">
+            <img src="dance.jpg" alt="Dance">
             <span class="dance">Dance</span>
-            <h3>
-                Dance is the rhythm of the soul's expression..</h3>
-            <div class="arrow">
+            <h3>Dance is the rhythm of the soul's expression.</h3>
+            <div class="arrow" onclick="addToCart()">
                 <i class="fas fa-arrow-right card-icon"></i>
             </div>
         </a>
 
         <a href="#" class="card-item">
-            <img src="basketball.jpeg" alt="basketball">
+            <img src="basketball.jpg" alt="Basketball">
             <span class="basketball">Basketball</span>
-            <h3>basketball blends skill, strategy, and teamwork seamlessly</h3>
-            <div class="arrow">
+            <h3>Basketball blends skill, strategy, and teamwork seamlessly.</h3>
+            <div class="arrow" onclick="addToCart()">
                 <i class="fas fa-arrow-right card-icon"></i>
             </div>
         </a>
-
-
     </div>
 </body>
 </html>
